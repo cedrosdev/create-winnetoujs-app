@@ -1,0 +1,33 @@
+{
+  "name": "create-winnetoujs-app",
+  "bin": {
+    "create-winnetoujs-app": "./bin/index.js"
+  },
+  "files": [
+    "bin",
+    "templates"
+  ],
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.0.0"
+  },
+  "version": "1.0.0",
+  "description": "Scaffolding WinnetouJs Project",
+  "main": "index.js",
+  "scripts": {
+    "publish": "npm publish",
+    "publish:beta": "npm publish --tag beta"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedrosdev/create-winnetoujs-app.git"
+  },
+  "keywords": [],
+  "author": "Pamela Sedrez <pamela@cedros.dev> (https://cedros.dev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cedrosdev/create-winnetoujs-app/issues"
+  },
+  "homepage": "https://github.com/cedrosdev/create-winnetoujs-app#readme"
+}
