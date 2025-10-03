@@ -1,4 +1,5 @@
 {
+  "version": "1.0.0-beta.1",
   "name": "create-winnetoujs-app",
   "bin": {
     "create-winnetoujs-app": "./bin/index.js"
@@ -12,7 +13,6 @@
     "commander": "^11.0.0",
     "fs-extra": "^11.0.0"
   },
-  "version": "1.0.0",
   "description": "Scaffolding WinnetouJs Project",
   "main": "index.js",
   "scripts": {
