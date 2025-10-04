@@ -1,5 +1,9 @@
 {
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
+  "scripts": {
+    "publish": "npm publish",
+    "publish:beta": "npm publish --tag beta"
+  },
   "name": "create-winnetoujs-app",
   "bin": {
     "create-winnetoujs-app": "./bin/index.js"
@@ -15,10 +19,6 @@
   },
   "description": "Scaffolding WinnetouJs Project",
   "main": "index.js",
-  "scripts": {
-    "publish": "npm publish",
-    "publish:beta": "npm publish --tag beta"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cedrosdev/create-winnetoujs-app.git"
