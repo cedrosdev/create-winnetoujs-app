@@ -53,7 +53,7 @@ async function main(targetDir, templateDir) {
   console.log("Done! Now run:");
   console.log(`  cd ${targetDir}`);
   console.log("  npm install");
-  console.log("  npm start");
+  console.log("  npm run serve");
 }
 
 program.parse();

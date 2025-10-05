@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "serve": "npx live-server --port=3123 --open=./index.html  --watch=./dist,./index.html",
     "start": "node wbr --bundleRelease --watch --verbose",
     "start:prod": "node wbr --bundleRelease --production",
     "sass:prod": "sass --watch sass/main.scss:dist/css/main.min.css --style compressed --no-source-map --load-path='./src/",
