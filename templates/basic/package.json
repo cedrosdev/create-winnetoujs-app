@@ -7,8 +7,7 @@
     "start": "node wbr --bundleRelease --watch --verbose",
     "start:prod": "node wbr --bundleRelease --production",
     "sass:prod": "sass --watch sass/main.scss:dist/css/main.min.css --style compressed --no-source-map --load-path='./src/",
-    "sass:dev": "sass --watch sass/main.scss:dist/css/main.css --style expanded --source-map --load-path='./src/'",
-    "install": "npm i"
+    "sass:dev": "sass --watch sass/main.scss:dist/css/main.css --style expanded --source-map --load-path='./src/'"
   },
   "devDependencies": {
     "winnetoujs": "^3.0.0-beta.45",
