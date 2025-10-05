@@ -24,7 +24,8 @@ program
   });
 
 async function main(targetDir, templateDir) {
-  const dest = path.resolve(__dirname, "..", targetDir);
+  // Use process.cwd() instead of __dirname to get the current working directory
+  const dest = path.resolve(process.cwd(), targetDir);
 
   console.log(`Creating WinnetouJs app in ${dest}...`);
   await fs.copy(templateDir, dest);
