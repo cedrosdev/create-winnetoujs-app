@@ -52,8 +52,7 @@ async function main(targetDir, templateDir) {
   // you can spawn child_process here if you want automatic install
   console.log("Done! Now run:");
   console.log(`  cd ${targetDir}`);
-  console.log("  npm install");
-  console.log("  npm run serve");
+  console.log("  npm start");
 }
 
 program.parse();
