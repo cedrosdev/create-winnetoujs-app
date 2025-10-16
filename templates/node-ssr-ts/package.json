@@ -3,28 +3,16 @@
   "version": "1.0.0",
   "main": "Server-dist/server.js",
   "scripts": {
-    "start": "npm i && npm-run-all --parallel build-server-watch  frontend:winnetoujs frontend:sass ssr:winnetoujs serve",
+    "start": "npm i && npm-run-all --parallel build-server:watch  frontend:winnetoujs frontend:sass ssr:winnetoujs serve",
     "build-server": "tsc",
     "build-server:watch": "tsc --project tsconfig.json --watch & tsc-alias --project tsconfig.json --watch",
-    "serve": "pm2 delete all;pm2 start Server-dist/server.js --name the-small-arkon --watch;pm2 flush;pm2 logs --raw;",
+    "serve": "pm2 delete all;pm2 start Server-dist/server.js  --watch;pm2 flush;pm2 logs --raw;",
     "frontend:winnetoujs": "cd Frontend && npm i && npm run start:dev",
     "frontend:sass": "cd Frontend && npm run sass:dev",
     "ssr:winnetoujs": "cd View/winnetou-ssr && npm i && npm run start:dev",
     "dev": "ts-node server.ts",
     "clean": "rm -rf Server-dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cedrosdev/the-small-arkon.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cedrosdev/the-small-arkon/issues"
-  },
-  "homepage": "https://github.com/cedrosdev/the-small-arkon#readme",
-  "description": "",
   "dependencies": {
     "express": "^5.1.0",
     "pm2": "^6.0.13"
