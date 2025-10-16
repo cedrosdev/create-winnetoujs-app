@@ -28,6 +28,16 @@ To create a new WinnetouJS project, follow these steps:
    ```
 6. Open your web browser and visit `http://localhost:3123` to see your new WinnetouJS application in action!
 
+## Create a node ssr typescript winnetoujs app
+
+To create a new WinnetouJS project with Node.js, Server-Side Rendering (SSR), and TypeScript, use the following command:
+
+```bash
+npx create-winnetoujs-app my-ssr-ts-winnetoujs-app --template node-ssr-ts
+```
+
+Replace `my-ssr-ts-winnetoujs-app` with your desired project name.
+
 ## Get the official WinnetouJs VS Code Extension
 
 To enhance your development experience with WinnetouJS, consider installing the official WinnetouJS VS Code Extension. This extension provides features like syntax highlighting, code snippets, and IntelliSense for WinnetouJS projects.
