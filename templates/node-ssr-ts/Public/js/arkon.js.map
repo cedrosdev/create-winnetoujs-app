@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../Frontend/src/arkon.ts"],
+  "sourcesContent": ["console.log(\"test\");\n"],
+  "mappings": ";AAAA,QAAQ,IAAI,MAAM;",
+  "names": []
+}

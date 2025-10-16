@@ -1,0 +1,29 @@
+{
+  "name": "winnetou-ssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i && npm-run-all --parallel serve start:dev sass:dev",
+    "serve": "npx live-server --port=3123 --open=./index.html  --watch=./dist,./index.html",
+    "start:dev": "node wbr --bundleRelease --watch --verbose --node",
+    "start:prod": "node wbr --bundleRelease --production",
+    "sass:prod": "sass --watch sass/main.scss:dist/css/main.min.css --style compressed --no-source-map --load-path='./src/",
+    "sass:dev": "sass --watch sass/main.scss:dist/css/main.css --style expanded --source-map --load-path='./src/'",
+    "i": "npm i",
+    "winnetoujs:beta": " npm install winnetoujs@beta",
+    "winnetoujs:latest": " npm install winnetoujs@latest",
+    "types": "tsc src/app.ts --declaration --emitDeclarationOnly --outDir dist/types --esModuleInterop --module nodenext --target es2022"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.89.2",
+    "winnetoujs": "^3.1.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "esbuild-plugin-d.ts": "^1.3.1"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@Model/*": ["./Model/*"],
+      "@Views/*": ["./View/*"],
+      "@Controller/*": ["./Controller/*"]
+    },
+    "esModuleInterop": true,
+    "target": "es2020",
+    "module": "nodenext",
+    "allowJs": true,
+    "lib": ["ES2020"],
+    "outDir": "./Server-dist",
+    "rootDir": "./",
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "nodenext",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["./server.ts"],
+  "exclude": ["node_modules", "Server-dist"]
+}

@@ -1,0 +1,5 @@
+{
+  "apps": ["./src/arkon.ts"],
+  "outputDir": "../Public/js",
+  "constructosSourceFolder": "./src"
+}

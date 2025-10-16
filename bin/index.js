@@ -9,7 +9,7 @@ const program = new Command();
 program
   .name("create-winnetoujs-app")
   .description("Create a new WinnetouJs application")
-  .version("1.0.0")
+  .version("1.x")
   .argument("[project-directory]", "directory to create the app in", "my-app")
   .option("-t, --template <template>", "template to use", "basic")
   .action((projectDirectory, options) => {
