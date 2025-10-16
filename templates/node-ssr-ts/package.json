@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "Server-dist/server.js",
   "scripts": {
-    "start": "npm i && npm-run-all --parallel build-server:watch  frontend:winnetoujs frontend:sass ssr:winnetoujs serve",
+    "start": "npm i && echo 'Configure and run Frontend setup and View/winnetou-ssr setup to start application...'",
     "build-server": "tsc",
     "build-server:watch": "tsc --project tsconfig.json --watch & tsc-alias --project tsconfig.json --watch",
     "serve": "pm2 delete all;pm2 start Server-dist/server.js  --watch;pm2 flush;pm2 logs --raw;",
-    "frontend:winnetoujs": "cd Frontend && npm i && npm run start:dev",
+    "frontend:install": "cd Frontend && npm i",
+    "frontend:winnetoujs": "cd Frontend && npm run start:dev",
     "frontend:sass": "cd Frontend && npm run sass:dev",
-    "ssr:winnetoujs": "cd View/winnetou-ssr && npm i && npm run start:dev",
+    "ssr:install": "cd View/winnetou-ssr && npm i",
+    "ssr:winnetoujs": "cd View/winnetou-ssr && npm run start:dev",
     "dev": "ts-node server.ts",
     "clean": "rm -rf Server-dist"
   },
