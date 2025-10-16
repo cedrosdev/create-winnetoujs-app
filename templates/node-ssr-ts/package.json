@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm i && echo 'Configure and run Frontend setup and View/winnetou-ssr setup to start application...'",
     "build-server": "tsc",
-    "build-server:watch": "tsc --project tsconfig.json --watch & tsc-alias --project tsconfig.json --watch",
+    "build-server:watch": "tsc --project tsconfig.json --watch & sleep 5 && tsc-alias --project tsconfig.json --watch",
     "serve": "pm2 delete all;pm2 start Server-dist/server.js  --watch;pm2 flush;pm2 logs --raw;",
     "frontend:install": "cd Frontend && npm i",
     "frontend:winnetoujs": "cd Frontend && npm run start:dev",
